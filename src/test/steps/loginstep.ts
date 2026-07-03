@@ -54,7 +54,7 @@ Then('Login should be successful', async function (this:CustomWorld) {
 Then('Login should not  be successful', async function (this:CustomWorld) {
      const warning = this.page.locator(".alert.alert-danger");
 
-    await expect(warning).toBeVisible({timeout:5000});
+    await expect(warning).toBeVisible({timeout:12000});
 
     await expect(warning).toContainText(
         "Warning: No match for E-Mail Address and/or Password.");

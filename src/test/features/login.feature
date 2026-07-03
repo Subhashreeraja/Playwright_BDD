@@ -5,7 +5,7 @@ Feature: User Authentication tests
       And User click on the login link
 
   Scenario: Login should be success
-     And User enters the email in loginpage as "testdatasss@gmail.com"
+     And User enters the email in loginpage as "testdatassss@gmail.com"
      And User enters the password in loginpage as "Testsss123"
      When User click on the login button
      Then Login should be successful

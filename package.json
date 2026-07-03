@@ -1,0 +1,28 @@
+{
+  "name": "playwright_bdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "ci": "cucumber-js src/test/features --format json:reports/report.json",
+    "failed": "cucumber-js @rerun.txt",
+    "parallel": "cucumber-js src/test/features --parallel 2",
+    "smoke": "cucumber-js src/test/features --tags @smoke",
+    "regression": "cucumber-js src/test/features --tags @regression",
+    "posttest": "npx ts-node src/helper/report.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "multiple-cucumber-html-reporter": "^3.10.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "typescript": "^6.0.3"
+  }
+}

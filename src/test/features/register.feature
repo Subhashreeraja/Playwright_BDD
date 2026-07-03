@@ -7,7 +7,7 @@ Feature: User Registration Tests
   Scenario: Register should be success
      And User enters the firstname as "tests"
      And User enters the lastname as "data"
-     And User enters the email as "testdatasss@gmail.com"
+     And User enters the email as "testdatassss@gmail.com"
      And User enters the telephone as "1234533123"
      And User enters the password as "Testsss123"
      And User enters the confirmPassword as "Testsss123"

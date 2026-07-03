@@ -33,7 +33,8 @@ module.exports={
         format:[
            "progress-bar",
            "json:reports/cucumber-report.json",
-           "html:reports/cucumber-report.html"
+           "html:reports/cucumber-report.html",
+           "rerun:@rerun.txt"
         ]
     }
 };

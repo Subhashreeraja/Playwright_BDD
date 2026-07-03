@@ -9,7 +9,8 @@
     "parallel": "cucumber-js src/test/features --parallel 2",
     "smoke": "cucumber-js src/test/features --tags @smoke",
     "regression": "cucumber-js src/test/features --tags @regression",
-    "posttest": "npx ts-node src/helper/report.ts"
+    "posttest": "npx ts-node src/helper/report.ts",
+    "test:failed": "cucumber-js @rerun.txt"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +21,8 @@
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
     "multiple-cucumber-html-reporter": "^3.10.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "winston": "^3.19.0"
   },
   "dependencies": {
     "typescript": "^6.0.3"

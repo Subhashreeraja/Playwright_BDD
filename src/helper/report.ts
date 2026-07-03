@@ -1,9 +1,9 @@
 const report = require("multiple-cucumber-html-reporter");
 report.generate({
   jsonDir: "reports",
-  reportPath: "./",
+  reportPath: "reports/html-report",
   reportName: "Playwright BDD Report",
-  pageTitle: "BookCart App test report",
+  pageTitle: "Tutorialninja website test report",
   displayDuration: false,
   metadata: {
     browser: {
@@ -19,7 +19,7 @@ device: "Subhashree R-Machine",
   customData: {
     title: "Test info",
     data: [
-      { label: "Project", value: "Book Cart Project" },
+      { label: "Project", value: "Tutorialninja website Project" },
       { label: "Release", value: "1.2.3" },
       { label: "Cycle", value: "Smoke-1" },      ],    },  });
 
